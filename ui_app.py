@@ -275,7 +275,7 @@ def main():
 
             highlight_x = st.session_state.get("selected_load_capex", None)
 
-            fig3 = plot_optimal_sizes_vs_loadcapex(results, highlight_x=highlight_x)
+            fig3 = plot_optimal_sizes_vs_loadcapex(results, highlight_load_capex=highlight_x)
             st.pyplot(fig3)
 
             fig8 = plot_LCOE_and_utilization_vs_loadcapex(results, highlight_load_capex=highlight_x)
